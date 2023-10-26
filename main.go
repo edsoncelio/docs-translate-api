@@ -29,7 +29,7 @@ func main() {
 	client := translate.NewFromConfig(cfg)
 
 	demoText, err := client.TranslateText(context.TODO(), &translate.TranslateTextInput{
-		SourceLanguageCode: aws.String("ko"),
+		SourceLanguageCode: aws.String("en"),
 		TargetLanguageCode: aws.String("pt"),
 		Text:               aws.String(string(text)),
 	})
